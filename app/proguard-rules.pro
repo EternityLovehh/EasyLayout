@@ -15,3 +15,11 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+  -keep public class android.support.design.** {*;}     # 保持哪些类不被混淆
+  -keep                        保留类和类中的成员，防止被混淆或移除
+  -keepnames                   保留类和类中的成员，防止被混淆，成员没有被引用会被移除
+  -keepclassmembers            只保留类中的成员，防止被混淆或移除
+  -keepclassmembernames        只保留类中的成员，防止被混淆，成员没有引用会被移除
+  -keepclasseswithmembers      保留类和类中的成员，防止被混淆或移除，保留指明的成员
+  -keepclasseswithmembernames  保留类和类中的成员，防止被混淆，保留指明的成员，成员没有引用会被移除
+  -keepattributes  保留某些属性不被混淆，可选（*Annotation*,InnerClasses，Signature，SourceFile,LineNumberTable）
