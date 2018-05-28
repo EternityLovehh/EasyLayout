@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.github.dcendents.android-maven'
 
+group = 'com.github.abcdqianlei1990'
 android {
     compileSdkVersion 27
     defaultConfig {
@@ -49,5 +51,4 @@ dependencies {
     //视频播放库
     compile 'cn.jzvd:jiaozivideoplayer:6.2.10'
     implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
-
 }
